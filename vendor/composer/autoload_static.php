@@ -9,18 +9,23 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'efd893c01f001f6c8c594ea00713c08c' => __DIR__ . '/..' . '/mmucklo/krumo/class.krumo.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
+            'Whoops\\Handler\\' => 15,
             'Whoops\\' => 7,
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Contracts\\' => 18,
+            'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Translation\\' => 30,
         ),
         'P' => 
@@ -44,9 +49,17 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
     );
 
     public static $prefixDirsPsr4 = array (
+        'Whoops\\Handler\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/whoops/soap/src',
+        ),
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
+        'Symfony\\Polyfill\\Php72\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -55,6 +68,10 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
         'Symfony\\Contracts\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/contracts',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
         'Symfony\\Component\\Translation\\' => 
         array (

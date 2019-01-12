@@ -1,6 +1,5 @@
 <?php
 require_once("APP.php");
-use Carbon\Carbon;
 
 /*
 require_once("models/Usuario.php");
@@ -17,8 +16,9 @@ $newTask->nombre = "ok";
 
 $newTask->save();
 
-krumo($tasks);
+dump($tasks);
 /*
+krumo($tasks);
 krumo($usuarios);
 */
 ?>

@@ -1,15 +1,16 @@
 <?php
-require "vendor/autoload.php";
+require_once "vendor/autoload.php";
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Handler\JsonResponseHandler;
+use Carbon\Carbon;
 
 //cargar env
 $dotenv = Dotenv\Dotenv::create(__DIR__);
 $dotenv->load();
 
 //whoops
-if($_ENV['APP_ENV'] === "local"){
+if($_ENV['APP_ENV'] === "debug"){
     $run     = new Whoops\Run;
     $handler = new PrettyPageHandler;
     
