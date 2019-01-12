@@ -33,6 +33,7 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
         ),
         'D' => 
         array (
+            'Dotenv\\' => 7,
             'Doctrine\\Common\\Inflector\\' => 26,
         ),
     );
@@ -74,6 +75,10 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
         array (
             0 => __DIR__ . '/..' . '/illuminate/container',
         ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
@@ -82,6 +87,16 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
 
     public static $fallbackDirsPsr4 = array (
         0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+    );
+
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'PhpOption\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpoption/phpoption/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -95,6 +110,7 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
             $loader->prefixLengthsPsr4 = ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed::$prefixDirsPsr4;
             $loader->fallbackDirsPsr4 = ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed::$classMap;
 
         }, null, ClassLoader::class);
