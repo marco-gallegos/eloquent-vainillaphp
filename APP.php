@@ -1,18 +1,25 @@
 <?php
 require "vendor/autoload.php";
 use Illuminate\Database\Capsule\Manager as Capsule;
+use Whoops\Handler\PrettyPageHandler;
+use Whoops\Handler\JsonResponseHandler;
 
 //cargar env
 $dotenv = Dotenv\Dotenv::create(__DIR__);
 $dotenv->load();
 
 //whoops
-/**
- * 
- $whoops = new \Whoops\Run;
- $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
- $whoops->register();
-*/
+if($_ENV['APP_ENV'] === "local"){
+    $run     = new Whoops\Run;
+    $handler = new PrettyPageHandler;
+    
+    $run->pushHandler($handler);
+    
+    // Register the handler with PHP, and you're set!
+}
+$run->register();
+//final de whoop
+
 
 $capsule = new Capsule;
 $capsule->addConnection([

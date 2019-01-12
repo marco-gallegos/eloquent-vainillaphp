@@ -13,6 +13,10 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Whoops\\' => 7,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -22,6 +26,7 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
+            'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
         ),
         'I' => 
@@ -39,6 +44,10 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
     );
 
     public static $prefixDirsPsr4 = array (
+        'Whoops\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -54,6 +63,10 @@ class ComposerStaticInit83c068e77dc8dc4b986ff18a8a6b58ed
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'Psr\\Container\\' => 
         array (

@@ -2,7 +2,8 @@
     "require": {
         "illuminate/database": "^5.7",
         "mmucklo/krumo": "^0.5.7",
-        "vlucas/phpdotenv": "^3.1"
+        "vlucas/phpdotenv": "^3.1",
+        "filp/whoops": "^2.3"
     },
     "autoload": {
         "classmap": [
