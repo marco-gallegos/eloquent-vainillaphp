@@ -1,0 +1,11 @@
+{
+    "require": {
+        "illuminate/database": "^5.7",
+        "mmucklo/krumo": "^0.5.7"
+    },
+    "autoload": {
+        "classmap": [
+            "models"
+        ]
+    }
+}
